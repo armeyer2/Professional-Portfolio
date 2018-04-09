@@ -1,3 +1,3 @@
 # Professional-Portfolio
-Aaron Meyer : My web design portfolio
-aaronmeyer.getforge.io
+Aaron Meyer : My web design portfolio : http://aaronmeyer.getforge.io/
+
