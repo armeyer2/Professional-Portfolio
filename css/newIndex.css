@@ -17,7 +17,7 @@ h4,
 h5,
 label,
 h6 {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin: 0 0 35px;
   letter-spacing: 1px;
@@ -245,6 +245,31 @@ footer {
     background-color: rgba(0,0,0,0.2); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
+}
+#pageLoadOverlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100;
+    background-color: rgba(255, 255, 255, .95);
+    z-index: 1031;
+    cursor: pointer;
+}
+#portfolioText {
+        position: absolute;
+        float: left;
+        font-size: 48;
+        margin: 5%;
+        color: black;
+        bottom: 0%;
+
+
+        padding: 5%;
+        border-radius: 10px;
 }
 
 #priceText {

@@ -79,6 +79,10 @@
       $("#overlay").fadeOut(750);
 
   });
+  $("#pageLoadOverlay").click(function () {
+      $("#pageLoadOverlay").fadeOut(750);
+
+  });
 
   $("#purchaseCancel").click(function () {
       $("#priceOverlay").fadeOut(750);
