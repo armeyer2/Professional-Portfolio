@@ -49,6 +49,60 @@
     }
   });
 
+  $("#seePriceButton").click( function () {
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ["September","October","November", "December", "January", "February"],
+              datasets: [{
+                  label: 'Crewneck Price',
+                  data: [30, 28, 30, 28, 26, 24],
+                  backgroundColor: [
+                      'rgba(81, 119, 158, 0.2)'
+
+                  ],
+                  borderColor: [
+                      'rgb(81, 119, 158, 1)'
+
+                  ],
+                  borderWidth: 1 ,
+                  pointStyle: "circle"
+              },
+              {
+                  label: 'Short-Sleeve Price',
+                  data: [28, 24, 26, 24, 22, 18],
+                  backgroundColor: [
+                      'rgba(92, 152, 249, 0.2)'
+
+                  ],
+                  borderColor: [
+                      'rgb(81, 119, 158, 1)'
+
+                  ],
+                  borderWidth: 1 ,
+                  pointStyle: "circle"
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero:true ,
+                          min: 15 ,
+                          max: 35 ,
+                          stepSize: 5
+                      }
+                  }]
+              }
+          }
+      });
+      setTimeout( function functionName() {
+          $("#priceOverlayButton").fadeIn(750);
+      }, 2000);
+
+  })
+
   $("#priceOverlayButton").click(function() {
       $("#priceOverlay").fadeIn(750);
   })

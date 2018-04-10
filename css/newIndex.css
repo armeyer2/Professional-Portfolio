@@ -45,6 +45,15 @@ footer {
 
 
 @media (max-width: 768px) {
+    #mobileChartImage {
+        padding: 5%;
+    }
+    #priceAlt {
+        text-align: center;
+    }
+    #priceSection {
+        display: none;
+    }
     #inspirationText {
         display: none;
     }
@@ -122,6 +131,9 @@ footer {
 
  }
 @media (min-width: 768px) {
+    #priceAlt {
+        display: none;
+    }
     #inspirationTextMobile {
         display: none;
     }
@@ -215,7 +227,9 @@ footer {
     margin-top: 1%;
 }
 
-
+#seePriceButton {
+    align-content: center;
+}
 
 #priceOverlayButton {
     margin-top: 3%;
@@ -225,6 +239,7 @@ footer {
 
     margin-left: auto;
     margin-right: auto;
+    display: none;
 }
 
 #text{
