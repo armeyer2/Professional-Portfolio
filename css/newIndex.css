@@ -131,6 +131,9 @@ footer {
 
  }
 @media (min-width: 768px) {
+    #scrollButtonProduct {
+        display: none;
+    }
     #priceAlt {
         display: none;
     }
@@ -144,10 +147,7 @@ footer {
         float: right;
         align-content: right;
     }
-    #priceSection {
 
-
-    }
     #merch {
         display: block;
         align-content: center;
@@ -297,6 +297,7 @@ footer {
         border-radius: 10px;
 }
 #portfolioName {
+
 
 }
 #portfolioFadeText {

@@ -2,27 +2,61 @@
   "use strict"; // Start of use strict
   $(document).ready(function () {
 
-      setTimeout(function () {
+        $("#jumbotronImage").width($(window).width());
+
           $("#portfolioFadeText").fadeIn(1500);
 
-      }, 2000);
+          var ctx = document.getElementById("myChart");
+          var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                  labels: ["September","October","November", "December", "January", "February"],
+                  datasets: [{
+                      label: 'Crewneck Price',
+                      data: [30, 28, 30, 28, 26, 24],
+                      backgroundColor: [
+                          'rgba(81, 119, 158, 0.2)'
 
+                      ],
+                      borderColor: [
+                          'rgb(81, 119, 158, 1)'
 
-      if($(window).width() >= 768) {
-          setTimeout(function(){
-              $("#scrollButton").fadeIn(1500);
+                      ],
+                      borderWidth: 1 ,
+                      pointStyle: "circle"
+                  },
+                  {
+                      label: 'Short-Sleeve Price',
+                      data: [28, 24, 26, 24, 22, 18],
+                      backgroundColor: [
+                          'rgba(92, 152, 249, 0.2)'
 
-          }, 2000);
+                      ],
+                      borderColor: [
+                          'rgb(81, 119, 158, 1)'
 
-      }
-      if($(window).width() <= 768) {
-          $("#mobileScrollButton").fadeIn(2500);
-          $("#scrollButton").click(function () {
-               $("#scrollButtonProduct").fadeIn(3000);
-               console.log("window is smaller than 768");
-
+                      ],
+                      borderWidth: 1 ,
+                      pointStyle: "circle"
+                  }]
+              },
+              options: {
+                  scales: {
+                      yAxes: [{
+                          ticks: {
+                              beginAtZero:true ,
+                              min: 15 ,
+                              max: 35 ,
+                              stepSize: 5
+                          }
+                      }]
+                  }
+              }
           });
-      }
+
+
+
+
   })
 
 //scrolls to the center of the image
@@ -49,59 +83,6 @@
     }
   });
 
-  $("#seePriceButton").click( function () {
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-          type: 'line',
-          data: {
-              labels: ["September","October","November", "December", "January", "February"],
-              datasets: [{
-                  label: 'Crewneck Price',
-                  data: [30, 28, 30, 28, 26, 24],
-                  backgroundColor: [
-                      'rgba(81, 119, 158, 0.2)'
-
-                  ],
-                  borderColor: [
-                      'rgb(81, 119, 158, 1)'
-
-                  ],
-                  borderWidth: 1 ,
-                  pointStyle: "circle"
-              },
-              {
-                  label: 'Short-Sleeve Price',
-                  data: [28, 24, 26, 24, 22, 18],
-                  backgroundColor: [
-                      'rgba(92, 152, 249, 0.2)'
-
-                  ],
-                  borderColor: [
-                      'rgb(81, 119, 158, 1)'
-
-                  ],
-                  borderWidth: 1 ,
-                  pointStyle: "circle"
-              }]
-          },
-          options: {
-              scales: {
-                  yAxes: [{
-                      ticks: {
-                          beginAtZero:true ,
-                          min: 15 ,
-                          max: 35 ,
-                          stepSize: 5
-                      }
-                  }]
-              }
-          }
-      });
-      setTimeout( function functionName() {
-          $("#priceOverlayButton").fadeIn(750);
-      }, 2000);
-
-  })
 
   $("#priceOverlayButton").click(function() {
       $("#priceOverlay").fadeIn(750);
@@ -140,11 +121,30 @@
   });
   $("#pageLoadOverlay").click(function () {
       $("#pageLoadOverlay").fadeOut(750);
+      if($(window).width() >= 768) {
+          setTimeout(function(){
+              $("#scrollButton").fadeIn(1500);
+
+          }, 1500);
+
+      }
+      if($(window).width() <= 768) {
+          $("#mobileScrollButton").fadeIn(2500);
+
+      }
 
   });
 
   $("#purchaseCancel").click(function () {
       $("#priceOverlay").fadeOut(750);
+
+  });
+  $("#scrollButton").click(function () {
+      setTimeout(function () {
+          $("#scrollButtonProduct").fadeIn(3000);
+      }, 2000);
+
+
 
   });
 
