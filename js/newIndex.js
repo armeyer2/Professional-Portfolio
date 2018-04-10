@@ -2,6 +2,11 @@
   "use strict"; // Start of use strict
   $(document).ready(function () {
 
+      setTimeout(function () {
+          $("#portfolioFadeText").fadeIn(1500);
+
+      }, 2000);
+
 
       if($(window).width() >= 768) {
           setTimeout(function(){

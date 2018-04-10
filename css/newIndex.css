@@ -45,6 +45,12 @@ footer {
 
 
 @media (max-width: 768px) {
+    #inspirationText {
+        display: none;
+    }
+    #inspirationTextMobile {
+    padding-top: 15%;
+    }
     #priceSection {
         margin-bottom: 50%;
     }
@@ -100,6 +106,7 @@ footer {
         text-align: center;
     }
     #mobileJumbotronImage {
+
         width: 100%;
         margin-top: 15%;
         margin-bottom: 15%;
@@ -115,6 +122,9 @@ footer {
 
  }
 @media (min-width: 768px) {
+    #inspirationTextMobile {
+        display: none;
+    }
     #contactContainer {
         margin-top: 5%;
     }
@@ -255,7 +265,7 @@ footer {
     bottom: 0;
     width: 100%;
     width: 100;
-    background-color: rgba(255, 255, 255, .95);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 1031;
     cursor: pointer;
 }
@@ -268,8 +278,17 @@ footer {
         bottom: 0%;
 
 
-        padding: 5%;
+        padding: 1%;
         border-radius: 10px;
+}
+#portfolioName {
+
+}
+#portfolioFadeText {
+    font-size: 14pt;
+    color: grey;
+    display: none;
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #priceText {
@@ -279,7 +298,8 @@ footer {
     background: none;
     position:relative;
     display:inline-block;
-    text-align:center;
+
+
 }
 
 #reminder {
