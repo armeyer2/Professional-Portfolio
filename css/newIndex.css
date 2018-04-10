@@ -302,10 +302,23 @@ footer {
 }
 #portfolioName {
 
+}
+#portfolioBottomText {
+    position: absolute;
+    float: left;
+    font-size: 14pt;
+    margin: 5%;
+    color: black;
+    bottom: 0%;
 
+    padding: 1%;
+    padding-bottom:  2%;
+
+    border-radius: 10px;
 }
 #portfolioFadeText {
     font-size: 14pt;
+    position: absolute;
     color: grey;
     display: none;
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
