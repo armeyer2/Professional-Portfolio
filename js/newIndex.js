@@ -1,10 +1,14 @@
 (function($) {
+
   "use strict"; // Start of use strict
+
   $(document).ready(function () {
+
 
         $("#jumbotronImage").width($(window).width());
 
           $("#portfolioFadeText").fadeIn(1500);
+          $("#gifLoader").fadeOut(1500);
 
           var ctx = document.getElementById("myChart");
           var myChart = new Chart(ctx, {
@@ -120,6 +124,12 @@
 
   });
   $("#pageLoadOverlay").click(function () {
+
+      $('body').css({
+
+            overflow: 'auto',
+            overflowX: 'scroll'
+        });
       $("#pageLoadOverlay").fadeOut(750);
       if($(window).width() >= 768) {
           setTimeout(function(){

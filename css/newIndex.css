@@ -1,4 +1,8 @@
+
+
 body {
+    overflow-x: hidden;
+  overflow-y: hidden;
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
   width: 100%;
@@ -305,6 +309,9 @@ footer {
     color: grey;
     display: none;
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#gifLoader {
+    height: 100%;
 }
 
 #priceText {

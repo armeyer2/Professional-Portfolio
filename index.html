@@ -13,12 +13,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
 
 
     <link href="css/newIndex.css" rel="stylesheet">
 </head>
-<body>
+
 
 <!-- <nav id="page-top" class="navbar navbar-expand-sm bg-light">
     <div class="container-fluid">
@@ -40,7 +41,7 @@
 </nav> -->
 <!-- Navigation -->
 
-<div class="container-fluid">
+<div class="container-fluid" id="topImage">
     <div class="jumbotron" >
         <img id="jumbotronImage" src="img/winter forest with text.png" alt="winter forest">
         <img id="mobileJumbotronImage" src="img/mobile winter forest.png" alt="winter forest">
@@ -110,8 +111,10 @@
 </div>
 <div id="pageLoadOverlay">
     <div class="container-fluid">
+
         <div id="portfolioText" class="row">
             <h1 id="portfolioName" >Aaron Meyer : professional portfolio <br/></h1>
+            <img id="gifLoader" src="img/Preloader.gif" alt="">
             <h3 id="portfolioFadeText"> Click to go to site in development</h3>
         </div>
 
@@ -190,7 +193,7 @@
 
 
 <section id="priceSection" class="content-section">
-    
+
     <div class="container-fluid">
         <div id="chart-container" class="container-fluid">
             <canvas id="myChart"></canvas>
