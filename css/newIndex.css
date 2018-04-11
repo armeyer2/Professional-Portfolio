@@ -49,6 +49,18 @@ footer {
 
 
 @media (max-width: 768px) {
+    #priceOverlayButton {
+        display: none;
+    }
+    #priceOverlayButtonMobile {
+        margin-top: 3%;
+        display: block;
+        align-content: center;
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
     #priceOverlayText {
         position: absolute;
            top: 50%;
@@ -143,6 +155,9 @@ footer {
 
  }
 @media (min-width: 768px) {
+    #priceOverlayButtonMobile {
+        display: none;
+    }
     #priceOverlayText {
         position: absolute;
            top: 50%;
@@ -275,16 +290,7 @@ footer {
     margin-right: auto;
 
 }
-#priceOverlayButtonMobile {
-    margin-top: 3%;
-    display: block;
-    align-content: center;
-    text-align: center;
 
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 #text{
     position: absolute;
