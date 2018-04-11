@@ -49,6 +49,7 @@ footer {
 
 
 @media (max-width: 768px) {
+
     #mobileChartImage {
         padding: 5%;
     }
@@ -120,6 +121,10 @@ footer {
 
  }
 @media (min-width: 768px) {
+
+    #pageLoadOverlayMobile {
+        display: none;
+    }
     #scrollButtonProduct {
         display: none;
     }
@@ -217,6 +222,19 @@ footer {
 #seePriceButton {
     align-content: center;
 }
+#pageLoadOverlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1031;
+    cursor: pointer;
+}
 
 #priceOverlayButton {
     margin-top: 3%;
@@ -258,26 +276,14 @@ footer {
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
-#pageLoadOverlay {
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    width: 100;
-    background-color: rgba(255, 255, 255, 1);
-    z-index: 1031;
-    cursor: pointer;
-}
 #portfolioText {
         position: absolute;
         float: left;
         font-size: 48;
         margin: 5%;
         color: black;
-        bottom: 0%;
+
 
 
         padding: 1%;
@@ -287,21 +293,17 @@ footer {
 #portfolioName {
 
 }
+#portfolioTextContainer {
+    margin-top: 40%;
+}
 #portfolioBottomText {
-    position: absolute;
+
     float: left;
     font-size: 14pt;
-    margin: 5%;
-    color: black;
-    bottom: 0%;
 
-    padding: 1%;
-    padding-bottom:  10%;
-    margin-bottom: 10%;
-
-    border-radius: 10px;
 }
-#portfolioFadeText {
+.portfolioFadeText {
+    margin-top: 5%;
     font-size: 14pt;
     position: absolute;
     color: grey;
