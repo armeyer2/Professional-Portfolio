@@ -49,6 +49,12 @@ footer {
 
 
 @media (max-width: 768px) {
+    #portfolioTextContainer {
+
+        position: fixed;
+    bottom: 10%;
+
+    }
 
     #mobileChartImage {
         padding: 5%;
@@ -121,6 +127,12 @@ footer {
 
  }
 @media (min-width: 768px) {
+    #portfolioTextContainer {
+
+        position: fixed;
+    bottom: 10%;
+    left: 5%;
+    }
 
     #pageLoadOverlayMobile {
         display: none;
@@ -281,18 +293,15 @@ footer {
 #portfolioName {
 
 }
-#portfolioTextContainer {
 
-    margin-top: 90%;
-}
 #portfolioBottomText {
-    bottom: 0%;
+
     float: left;
     font-size: 14pt;
 
 }
 .portfolioFadeText {
-    margin-top: 5%;
+
     font-size: 14pt;
     position: absolute;
     color: grey;

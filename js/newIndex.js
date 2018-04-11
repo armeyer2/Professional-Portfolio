@@ -8,7 +8,7 @@
         $("#jumbotronImage").width($(window).width());
 
           $(".portfolioFadeText").fadeIn(1500);
-          $(".gifLoader").fadeOut(1500);
+          $("#gifLoader").fadeOut(1500);
 
           //var ctx = document.getElementById("myChart");
           /**var myChart = new Chart(ctx, {
