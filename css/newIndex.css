@@ -277,27 +277,16 @@ footer {
     cursor: pointer; /* Add a pointer on hover */
 }
 
-#portfolioText {
-        position: absolute;
-        float: left;
-        font-size: 48;
-        margin: 5%;
-        color: black;
 
-
-
-        padding: 1%;
-        padding-bottom: 10%;
-        border-radius: 10px;
-}
 #portfolioName {
 
 }
 #portfolioTextContainer {
-    margin-top: 40%;
+
+    margin-top: 90%;
 }
 #portfolioBottomText {
-
+    bottom: 0%;
     float: left;
     font-size: 14pt;
 
@@ -312,9 +301,7 @@ footer {
 }
 #gifLoader {
     padding-top: 5%;
-    position: absolute;
-    right: 50;
-    bottom: 50;
+
 }
 
 #priceText {
