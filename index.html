@@ -22,14 +22,14 @@
 <body>
     <div id="pageLoadOverlay">
         <div class="container-fluid">
-
+            <img id="gifLoader" src="img/Preloader.gif" alt="">
             <div id="portfolioText" class="row col-xs-12">
                 <h1 id="portfolioName" >Aaron Meyer : professional portfolio</h1>
-                <img id="gifLoader" src="img/Preloader.gif" alt="">
+
 
             </div>
             <div class="row col-xs-12" id="portfolioBottomText">
-                    <h3 id="portfolioFadeText">Click to go to site in development</h3>
+                    <h3 id="portfolioFadeText">Click to visit site in development</h3>
             </div>
 
 
@@ -117,9 +117,7 @@
             <div id="infoMerch" class="col-md-4">
                 <div id="infoMerchText" >
                     <p id="inspirationText">This months line-up is inspired by the lush forests of Yellowstone National Park.</p>
-                    <a id="scrollButtonProduct" href="#chart-container" class="btn btn-basic js-scroll-trigger">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
+                    <button id="priceOverlayButton" type="button" class="btn reminder" name="button">see your price</button>
                 </div>
 
 
@@ -129,14 +127,19 @@
                 <img src="img/winter forest line up cartoons2.png" alt="Double Shirt">
 
             </div>
-            <p id="inspirationTextMobile">This months line-up is inspired by the lush forests of Yellowstone National Park.</p>
+            <p id="inspirationTextMobile">This months line-up is inspired by the lush forests of Yellowstone National Park.<button id="priceOverlayButton" type="button" class="btn reminder" name="button">see your price</button></p>
 
         </div>
     </div>
 </section>
 
 <div id="priceOverlay">
+
     <div id="priceOverlayText">
+        <!--<div id="chart-container" class="container-fluid">
+            <canvas id="myChart"></canvas>
+        </div>-->
+        <img id="mobileChartImage" src="img/mobieChartImage.JPG" alt="mobileChartImage">
 
         <h2 id="priceText">Crewneck $23.99 - Long Sleeve $19.99</h2>
         <h2 class="phoneText">Crewneck $23.99</h2>
@@ -176,22 +179,11 @@
 
 </div>
 
-
-<section id="priceSection" class="content-section">
-
-    <div class="container-fluid">
-        <div id="chart-container" class="container-fluid">
-            <canvas id="myChart"></canvas>
-        </div>
-        <button id="priceOverlayButton" type="button" class="btn reminder" name="button">Purchase</button>
-        </div>
-    </div>
-</section>
-<section id="priceAlt">
+<!--<section id="priceAlt">
 
     <img id="mobileChartImage" src="img/mobieChartImage.JPG" alt="mobileChartImage">
     Dynamic charts coming to mobile soon!
-</section>
+</section>-->
 
 
 

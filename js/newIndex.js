@@ -10,8 +10,8 @@
           $("#portfolioFadeText").fadeIn(1500);
           $("#gifLoader").fadeOut(1500);
 
-          var ctx = document.getElementById("myChart");
-          var myChart = new Chart(ctx, {
+          //var ctx = document.getElementById("myChart");
+          /**var myChart = new Chart(ctx, {
               type: 'line',
               data: {
                   labels: ["September","October","November", "December", "January", "February"],
@@ -56,7 +56,7 @@
                       }]
                   }
               }
-          });
+          });**/
 
 
 
@@ -94,7 +94,11 @@
 
   $('#scrollButton').click( function() {
       $('merch').center();
-      console.log('scrollbuton clicked');
+
+  })
+  $('#scrollButtonProduct').click( function() {
+      $('#priceSection').center();
+
   })
 
 
@@ -150,9 +154,9 @@
 
   });
   $("#scrollButton").click(function () {
-      setTimeout(function () {
-          $("#scrollButtonProduct").fadeIn(3000);
-      }, 2000);
+      //setTimeout(function () {
+    //      $("#scrollButtonProduct").fadeIn(3000);
+     // }, 2000);
 
 
 
