@@ -90,6 +90,11 @@
 
   $("#priceOverlayButton").click(function() {
       $("#priceOverlay").fadeIn(750);
+      console.log("prive overlway clicked");
+  })
+  $("#priceOverlayButtonMobile").click(function() {
+      $("#priceOverlay").fadeIn(750);
+      console.log("prive overlway clicked");
   })
 
   $('#scrollButton').click( function() {
