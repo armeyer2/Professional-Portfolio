@@ -149,12 +149,35 @@ footer {
         align-content: center;
         text-align: center;
         width: 100%;
-        
+
         padding-top: 15%;
     }
 
  }
 @media (min-width: 768px) {
+    #indexCapture {
+
+        display: none;
+        bottom: 0;
+        margin-bottom: 3%;
+
+        width: 20%;
+        height: 20%;
+        border: #e0dedb 2px solid;
+        border-radius: 10px;
+    }
+    #galleryCapture {
+
+        display: none;
+        bottom: 0;
+
+        margin-bottom: 3%;
+
+        width: 20%;
+        height: 20%;
+        border: #e0dedb 2px solid;
+        border-radius: 10px;
+    }
     #priceOverlayButtonMobile {
         display: none;
     }
@@ -259,6 +282,10 @@ footer {
     cursor: pointer; /* Add a pointer on hover */
 
 }
+#hrPortfolio {
+    color: black;
+
+}
 #purchaseCancel {
     margin-top: 1%;
 }
@@ -266,6 +293,7 @@ footer {
 #seePriceButton {
     align-content: center;
 }
+
 #pageLoadOverlay {
 
     position: fixed;
@@ -321,10 +349,17 @@ footer {
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
+#gallery {
+    display: none;
+}
 
 
 #portfolioName {
 
+}
+#name {
+    background-color: #d6d7d8;
+    padding-left: 30px;
 }
 
 #portfolioBottomText {

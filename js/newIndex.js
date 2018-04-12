@@ -105,6 +105,28 @@
       $('#priceSection').center();
 
   })
+  $('#portfolioTextContainer').mouseover(function () {
+      $("#name").fadeOut(250);
+      $(".portfolioFadeText").fadeOut(250);
+      setTimeout(function () {
+           $("#indexCapture").fadeIn(500);
+           $("#galleryCapture").fadeIn(500);
+      }, 1000)
+
+  })
+
+  $('#indexCapture').mouseover(function () {
+      $(this).css("border" , "#a3a09c 3px solid");
+  })
+  $('#indexCapture').mouseout(function () {
+      $(this).css("border" , "#e0dedb 2px solid");
+  })
+  $('#galleryCapture').mouseover(function () {
+      $(this).css("border" , "#a3a09c 3px solid");
+  })
+  $('#galleryCapture').mouseout(function () {
+      $(this).css("border" , "#e0dedb 2px solid");
+  })
 
 
   $("#signInSubmit").click(function () {
