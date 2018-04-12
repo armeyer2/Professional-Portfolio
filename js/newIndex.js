@@ -112,6 +112,7 @@
            $("#indexCapture").fadeIn(500);
            $("#galleryCapture").fadeIn(500);
       }, 1000)
+      $("#portfolioTextContainer").css("align-content", "center");
 
   })
 
@@ -126,6 +127,10 @@
   })
   $('#galleryCapture').mouseout(function () {
       $(this).css("border" , "#e0dedb 2px solid");
+  })
+
+  $("#indexCapture").click(function () {
+
   })
 
 
