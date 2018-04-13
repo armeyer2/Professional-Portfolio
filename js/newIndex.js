@@ -122,6 +122,7 @@
   $('#indexCapture').mouseout(function () {
       $(this).css("border" , "#e0dedb 2px solid");
   })
+  
   $('#galleryCapture').mouseover(function () {
       $(this).css("border" , "#a3a09c 3px solid");
   })
