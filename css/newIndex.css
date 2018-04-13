@@ -178,6 +178,17 @@ footer {
         border: #e0dedb 2px solid;
         border-radius: 10px;
     }
+    #infoCapture {
+        display: none;
+        bottom: 0;
+
+        margin-bottom: 3%;
+
+        width: 20%;
+        height: 20%;
+        border: #e0dedb 2px solid;
+        border-radius: 10px;
+    }
     #priceOverlayButtonMobile {
         display: none;
     }

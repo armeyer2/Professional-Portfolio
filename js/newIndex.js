@@ -111,6 +111,7 @@
       setTimeout(function () {
            $("#indexCapture").fadeIn(500);
            $("#galleryCapture").fadeIn(500);
+           $("#infoCapture").fadeIn(500);
       }, 1000)
       $("#portfolioTextContainer").css("align-content", "center");
 
@@ -120,6 +121,12 @@
       $(this).css("border" , "#a3a09c 2px solid");
   })
   $('#indexCapture').mouseout(function () {
+      $(this).css("border" , "#e0dedb 2px solid");
+  })
+  $('#infoCapture').mouseover(function () {
+      $(this).css("border" , "#a3a09c 2px solid");
+  })
+  $('#infoCapture').mouseout(function () {
       $(this).css("border" , "#e0dedb 2px solid");
   })
 
@@ -150,6 +157,8 @@
       }
       $("#indexCapture").fadeOut();
       $("#galleryPage").css("display", "none");
+      $("#infoPage").css("display", "none");
+
   })
   $("#galleryCapture").click(function () {
 
@@ -170,7 +179,33 @@
           $("#mobileScrollButton").fadeIn(2500);
 
       }
+      $("#galleryCapture").fadeOut();
       $("#indexPage").css("display", "none");
+      $("#infoPage").css("display", "none");
+
+  })
+  $("#infoCapture").click(function () {
+
+      $('body').css({
+
+            overflow: 'auto',
+            overflowX: 'scroll'
+        });
+      $("#pageLoadOverlay").fadeOut(750);
+      if($(window).width() >= 768) {
+          setTimeout(function(){
+              $("#scrollButton").fadeIn(1500);
+
+          }, 1500);
+
+      }
+      if($(window).width() <= 768) {
+          $("#mobileScrollButton").fadeIn(2500);
+
+      }
+      $("#infoCapture").fadeOut();
+      $("#indexPage").css("display", "none");
+      $("#galleryPage").css("display", "none");
 
   })
 
