@@ -108,12 +108,91 @@ footer {
         align-content: center;
         text-align: center;
         width: 100%;
+<<<<<<< HEAD
         height: 100%;
+=======
+
+>>>>>>> ea049a517c519b9e230a7fc51958f8272317546e
         padding-top: 15%;
     }
 
  }
 @media (min-width: 768px) {
+<<<<<<< HEAD
+=======
+    #indexCapture {
+
+        display: none;
+        bottom: 0;
+        margin-bottom: 3%;
+
+        width: 20%;
+        height: 20%;
+        border: #e0dedb 2px solid;
+        border-radius: 10px;
+    }
+    #galleryCapture {
+
+        display: none;
+        bottom: 0;
+
+        margin-bottom: 3%;
+
+        width: 20%;
+        height: 20%;
+        border: #e0dedb 2px solid;
+        border-radius: 10px;
+    }
+    #infoCapture {
+        display: none;
+        bottom: 0;
+
+        margin-bottom: 3%;
+
+        width: 20%;
+        height: 20%;
+        border: #e0dedb 2px solid;
+        border-radius: 10px;
+    }
+    #priceOverlayButtonMobile {
+        display: none;
+    }
+    #priceOverlayText {
+        position: absolute;
+           top: 50%;
+           left: 50%;
+           font-size: 15px;
+           color: black;
+           transform: translate(-50%,-50%);
+           -ms-transform: translate(-50%,-50%);
+           background-color: white;
+           margin-top: 5%;
+           border-radius: 10px;
+           padding: 3%;
+           width: 40%;
+           align-content: center;
+           text-align: center;
+    }
+    #portfolioTextContainer {
+
+        position: fixed;
+    bottom: 10%;
+    left: 5%;
+    }
+
+    #pageLoadOverlayMobile {
+        display: none;
+    }
+    #scrollButtonProduct {
+        display: none;
+    }
+    #priceAlt {
+        display: none;
+    }
+    #inspirationTextMobile {
+        display: none;
+    }
+>>>>>>> ea049a517c519b9e230a7fc51958f8272317546e
     #contactContainer {
         margin-top: 5%;
     }
@@ -200,11 +279,43 @@ footer {
     cursor: pointer; /* Add a pointer on hover */
 
 }
+#hrPortfolio {
+    color: black;
+
+}
 #purchaseCancel {
     margin-top: 1%;
 }
 
+<<<<<<< HEAD
 
+=======
+#seePriceButton {
+    align-content: center;
+}
+
+#pageLoadOverlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1031;
+
+}
+#infoPage {
+    width: 66%;
+    align-content: center;
+    margin-top: 30%;
+}
+#infoText {
+
+}
+>>>>>>> ea049a517c519b9e230a7fc51958f8272317546e
 
 #priceOverlayButton {
     margin-top: 3%;
@@ -245,7 +356,41 @@ footer {
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
+#gallery {
+    display: none;
+}
 
+<<<<<<< HEAD
+=======
+
+#portfolioName {
+
+}
+#name {
+    background-color: #d6d7d8;
+    padding-left: 30px;
+}
+
+#portfolioBottomText {
+
+    float: left;
+    font-size: 14pt;
+
+}
+.portfolioFadeText {
+
+    font-size: 14pt;
+    position: absolute;
+    color: grey;
+    display: none;
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#gifLoader {
+    padding-top: 5%;
+
+}
+
+>>>>>>> ea049a517c519b9e230a7fc51958f8272317546e
 #priceText {
     margin-bottom: 0%;
 }
