@@ -34,9 +34,9 @@
         setTimeout(function () {
              $("#navbar").fadeIn(250);
         }, 1000)
-
-
     })
+
+    
 
 
 })(jQuery);

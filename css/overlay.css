@@ -68,22 +68,94 @@ p {
 
     width: 100%;
 }
+a {
+    color: black;
+}
 
-#navbar {
-    background-color: rgb(181, 181, 181);
-    margin-left: 22%;
-    height: 100%;
-    width: 15%;
-    padding-top: 20%;
+
+
+@media (min-width: 968px) {
+
+    #navbar {
+        background-color: rgb(181, 181, 181);
+        margin-left: 22%;
+        height: 100%;
+        width: 15%;
+        padding-top: 20%;
+
+    }
+    #portfolioFadeText {
+
+        font-size: 14pt;
+        position: absolute;
+        color: grey;
+        display: none;
+        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    #portfolioFadeTextMobile { display: none; }
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 968px) {
 
+    #navbar {
+        background-color: rgb(181, 181, 181);
+        margin-left: 22%;
+        height: 100%;
+        width: 30%;
+        padding-top: 20%;
 
+    }
+    #portfolioFadeText {
+
+        font-size: 14pt;
+        position: absolute;
+        color: grey;
+        display: none;
+        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    #portfolioFadeTextMobile { display: none; }
 
 }
 
-@@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 600px){
 
+    #navbar {
+        background-color: rgb(181, 181, 181);
+        margin-left: 18%;
+        height: 100%;
+        width: 35%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+
+    }
+    #portfolioFadeTextMobile {
+
+        font-size: 14pt;
+        position: absolute;
+        color: grey;
+        display: none;
+        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        background-color: rgb(181, 181, 181);
+
+        height: 100%;
+        width: 75%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+
+    }
+    #portfolioFadeTextMobile {
+
+        font-size: 14pt;
+        position: absolute;
+        color: grey;
+        display: none;
+        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
 }

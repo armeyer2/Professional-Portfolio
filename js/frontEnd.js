@@ -23,6 +23,7 @@
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
+
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
         }
@@ -131,7 +132,7 @@
       $('#priceSection').center();
 
   })
-  
+
 
 
 
@@ -155,7 +156,7 @@
       }
       $("#indexCapture").fadeOut();
       $("#galleryPage").css("display", "none");
-      $("#infoPage").css("display", "none");
+
 
   })
   $("#galleryCapture").click(function () {
@@ -177,9 +178,9 @@
           $("#mobileScrollButton").fadeIn(2500);
 
       }
-      $("#galleryCapture").fadeOut();
-      $("#indexPage").css("display", "none");
-      $("#infoPage").css("display", "none");
+      
+
+
 
   })
   $("#infoCapture").click(function () {
