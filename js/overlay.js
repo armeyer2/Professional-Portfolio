@@ -8,14 +8,12 @@
     });
 
     $('#portfolioTextContainer').mouseover(function () {
-        $("#pageLoadOverlay").fadeOut(250);
-
-        var url = "mainNavigation.html";
-        $(location).attr('href',url);
-
+        $("#pageLoadOverlay").fadeOut(50);
+        setTimeout( function functionName() {
+            var url = "mainNavigation.html";
+            $(location).attr('href',url);
+        }, 100)
     })
-
-
 
 
 })(jQuery);
