@@ -10,9 +10,9 @@
     $('#portfolioTextContainer').mouseover(function () {
         $("#pageLoadOverlay").fadeOut(250);
 
-        setTimeout(function () {
-             $("#navbar").fadeIn(250);
-        }, 1000)
+        var url = "mainNavigation.html";
+        $(location).attr('href',url);
+
     })
 
 
