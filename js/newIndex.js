@@ -1,14 +1,40 @@
 (function($) {
 
   "use strict"; // Start of use strict
+  function on() {
+      document.getElementById("overlay").style.display = "block";
+  }
 
+  function off() {
+      document.getElementById("overlay").style.display = "none";
+  }
+
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
   $(document).ready(function () {
 
 
         $("#jumbotronImage").width($(window).width());
 
-          $(".portfolioFadeText").fadeIn(1500);
-          $("#gifLoader").fadeOut(1500);
+
 
           //var ctx = document.getElementById("myChart");
           /**var myChart = new Chart(ctx, {
@@ -105,37 +131,9 @@
       $('#priceSection').center();
 
   })
-  $('#portfolioTextContainer').mouseover(function () {
-      $("#name").fadeOut(250);
-      $(".portfolioFadeText").fadeOut(250);
-      setTimeout(function () {
-           $("#indexCapture").fadeIn(500);
-           $("#galleryCapture").fadeIn(500);
-           $("#infoCapture").fadeIn(500);
-      }, 1000)
-      $("#portfolioTextContainer").css("align-content", "center");
+  
 
-  })
 
-  $('#indexCapture').mouseover(function () {
-      $(this).css("border" , "#a3a09c 2px solid");
-  })
-  $('#indexCapture').mouseout(function () {
-      $(this).css("border" , "#e0dedb 2px solid");
-  })
-  $('#infoCapture').mouseover(function () {
-      $(this).css("border" , "#a3a09c 2px solid");
-  })
-  $('#infoCapture').mouseout(function () {
-      $(this).css("border" , "#e0dedb 2px solid");
-  })
-
-  $('#galleryCapture').mouseover(function () {
-      $(this).css("border" , "#a3a09c 2px solid");
-  })
-  $('#galleryCapture').mouseout(function () {
-      $(this).css("border" , "#e0dedb 2px solid");
-  })
 
   $("#indexCapture").click(function () {
       $('body').css({
