@@ -80,15 +80,21 @@ p {
 
 #navOverlay {
     position: fixed;
-    margin: 10px;
     z-index: 1031;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    padding-left: 15px;
 }
 
-#navBar {
-    align-content: center;
-    width: 100%;
+#monthText {
+    display: inline-block;
+}
 
-
+#palmTree {
+    width: 40px;
+    display: inline-block;
+    padding-bottom: 15px;
 }
 
 #jumboText {
@@ -97,5 +103,7 @@ p {
     margin-top: 50%;
     color: rgb(181, 181, 181);
     font-family: 'Anton', sans-serif;
+    font-size: 72pt;
+    background-color: rgba(255,255,255, 0.9);
 
 }
