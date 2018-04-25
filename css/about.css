@@ -2,4 +2,36 @@
     width: 66%;
     align-content: center;
     margin-top: 30%;
+    background-color: rgb(216, 216, 216);
+
+}
+body {
+    font-family: 'Noto Serif', serif, bold;
+}
+
+#pageLoadOverlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100;
+    background-color: rgb(255, 235, 59);
+    z-index: 1031;
+
+}
+
+#portfolioTextContainer {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    left: 5%;
+    background-color: rgb(181, 181, 181);
+    margin-right: 10px;
+    border-radius: 4px 0px 0px 4px;
+}
+#aboutParagraph {
+    padding-right: 5%;
 }
