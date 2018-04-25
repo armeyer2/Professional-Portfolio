@@ -1,0 +1,132 @@
+html,body { height:100%; }
+
+body {
+  font-family: 'Noto Serif', serif, bold;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgb(255, 235, 59); }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+h6 {
+ font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0 0 35px; } }
+
+      img{max-width:100%;}
+      .jumbotron h1 {word-wrap: break-word;}
+
+
+@media (min-width: 968px) {
+
+    #navbar {
+        background-color: rgb(33, 33, 33);
+        color: white;
+        margin-left: 22%;
+        height: 100%;
+        width: 22%;
+        padding-top: 30%;
+        border-radius: 0px 0px 4px 4px;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 968px) {
+
+    #navbar {
+        background-color: rgb(33, 33, 33);
+        margin-left: 22%;
+        height: 100%;
+        width: 30%;
+        padding-top: 30%;
+        border-radius: 0px 0px 5px 5px;
+
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 600px){
+
+    #navbar {
+        background-color: rgb(33, 33, 33);
+        margin-left: 18%;
+        height: 100%;
+        width: 35%;
+        padding-top: 40%;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+}
+
+@media (max-width: 600px) and (min-width: 450px){
+    #navbar {
+        background-color: rgb(33, 33, 33);
+        height: 100%;
+        width: 50%;
+        padding-top: 50%;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    #navbar {
+        background-color: rgb(33, 33, 33);
+        height: 100%;
+        width: 75%;
+        padding-top: 50%;
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+
+.pageLoadOverlay {
+
+    margin-left: 50%;
+    background-color: rgb(33, 33, 33);
+    z-index: 1031;
+
+}
+
+.portfolioTextContainer {
+    position: fixed;
+    bottom: 10%;
+    margin-left: 12%;
+    padding: 20px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+
+    border-radius: 4px 0px 0px 4px;
+}
+#aboutParagraph {
+    padding-right: 20%;
+}
+
+#about {
+    display: none;
+}
+#contact {
+    display: none;
+}
