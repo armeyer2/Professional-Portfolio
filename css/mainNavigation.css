@@ -52,6 +52,25 @@ p {
 
     }
 
+    .pageLoadOverlay {
+
+        margin-left: 50%;
+        background-color: rgb(33, 33, 33);
+        z-index: 1031;
+
+    }
+
+    .portfolioTextContainer {
+        position: fixed;
+        bottom: 10%;
+        margin-left: 12%;
+        padding: 20px;
+        background-color: rgb(33, 33, 33);
+        color: white;
+
+        border-radius: 4px 0px 0px 4px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 968px) {
@@ -66,17 +85,55 @@ p {
 
     }
 
+    .pageLoadOverlay {
+
+        margin-left: 50%;
+        background-color: rgb(33, 33, 33);
+        z-index: 1031;
+
+    }
+
+    .portfolioTextContainer {
+        position: fixed;
+        bottom: 10%;
+        margin-left: 12%;
+        padding: 20px;
+        background-color: rgb(33, 33, 33);
+        color: white;
+
+        border-radius: 4px 0px 0px 4px;
+    }
+
 }
 
 @media (max-width: 768px) and (min-width: 600px){
 
     #navbar {
         background-color: rgb(33, 33, 33);
-        margin-left: 18%;
+        margin-left: 8%;
         height: 100%;
         width: 35%;
         padding-top: 40%;
         border-radius: 0px 0px 5px 5px;
+    }
+
+    .pageLoadOverlay {
+
+        margin-left: 50%;
+        background-color: rgb(33, 33, 33);
+        z-index: 1031;
+
+    }
+
+    .portfolioTextContainer {
+        position: fixed;
+        bottom: 10%;
+        margin-left: 6%;
+        padding: 20px;
+        background-color: rgb(33, 33, 33);
+        color: white;
+
+        border-radius: 4px 0px 0px 4px;
     }
 
 }
@@ -86,8 +143,27 @@ p {
         background-color: rgb(33, 33, 33);
         height: 100%;
         width: 50%;
-        padding-top: 50%;
+        padding-top: 20%;
         border-radius: 0px 0px 5px 5px;
+    }
+
+    .pageLoadOverlay {
+
+
+        background-color: rgb(33, 33, 33);
+        z-index: 1031;
+
+    }
+
+    .portfolioTextContainer {
+        position: fixed;
+        bottom: 2%;
+        margin-left: 2.5%;
+        padding: 15px;
+        background-color: rgb(33, 33, 33);
+        color: white;
+
+        border-radius: 4px 0px 0px 4px;
     }
 
 }
@@ -97,28 +173,33 @@ p {
         background-color: rgb(33, 33, 33);
         height: 100%;
         width: 75%;
-        padding-top: 50%;
+        padding-top: 20%;
         border-radius: 0px 0px 5px 5px;
+        display: block;
+    }
+
+    .pageLoadOverlay {
+
+
+        background-color: rgb(33, 33, 33);
+        z-index: 1031;
+
+    }
+
+    .portfolioTextContainer {
+        position: fixed;
+        bottom: 2%;
+        margin-left: 2.5%;
+        padding: 15px;
+        background-color: rgb(33, 33, 33);
+        color: white;
+
+        border-radius: 4px 0px 0px 4px;
     }
 }
 
-.pageLoadOverlay {
-
-    margin-left: 50%;
-    background-color: rgb(33, 33, 33);
-    z-index: 1031;
-
-}
-
-.portfolioTextContainer {
-    position: fixed;
-    bottom: 10%;
-    margin-left: 12%;
-    padding: 20px;
-    background-color: rgb(33, 33, 33);
+a {
     color: white;
-
-    border-radius: 4px 0px 0px 4px;
 }
 #aboutParagraph {
     padding-right: 20%;
@@ -128,5 +209,14 @@ p {
     display: none;
 }
 #contact {
+    display: none;
+}
+#mobileAbout {
+    display: none;
+}
+#mobileContact {
+    display: none;
+}
+#gallery {
     display: none;
 }

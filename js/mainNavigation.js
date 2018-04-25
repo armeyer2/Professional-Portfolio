@@ -1,22 +1,50 @@
 (function ($) {
     $(document).ready(function () {
+
         $('#aboutLink').mouseover(function () {
-            $("#contact").fadeOut(500);
-            $("#about").fadeIn(500);
+            if ($(window).width() < 600) {
+               $("#mobileAbout").fadeIn(500);
+               $('#navbar').fadeOut(500);
+           } else {
+               $("#contact").fadeOut(500);
+               $("#about").fadeIn(500);
+           }
         })
         $('#aboutLink').click(function () {
-            $("#contact").fadeOut(500);
-            $("#about").fadeIn(500);
+            if ($(window).width() < 600) {
+               $("#mobileAbout").fadeIn(500);
+               $('#navbar').fadeOut(500);
+           } else {
+               $("#contact").fadeOut(500);
+               $("#about").fadeIn(500);
+           }
         })
 
 
         $('#contactLink').mouseover(function () {
-            $("#about").fadeOut(500);
-            $("#contact").fadeIn(500);
+            if ($(window).width() < 600) {
+               $("#mobileContact").fadeIn(500);
+               $('#navbar').fadeOut(500);
+           } else {
+               $("#about").fadeOut(500);
+               $("#contact").fadeIn(500);
+           }
+
         })
         $('#contactLink').click(function () {
-            $("#about").fadeOut(500);
-            $("#contact").fadeIn(500);
+            if ($(window).width() < 600) {
+               $("#mobileContact").fadeIn(500);
+               $('#navbar').fadeOut(500);
+            } else {
+               $("#about").fadeOut(500);
+               $("#contact").fadeIn(500);
+            }
+        })
+
+        $(".backButton").click(function () {
+            $("#mobileAbout").fadeOut(500);
+            $("#mobileContact").fadeOut(500);
+            $("#navbar").fadeIn(500);
         })
     });
 
