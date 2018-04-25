@@ -27,11 +27,12 @@ body {
     position: fixed;
     bottom: 10%;
     width: 100%;
-    left: 5%;
-    background-color: rgb(181, 181, 181);
+    left: 20%;
+    background-color: rgb(33, 33, 33);
+    color: white;
     margin-right: 10px;
     border-radius: 4px 0px 0px 4px;
 }
 #aboutParagraph {
-    padding-right: 5%;
+    padding-right: 20%;
 }

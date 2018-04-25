@@ -56,7 +56,7 @@ p {
     position: fixed;
     bottom: 10%;
     width: 100%;
-    left: 5%;
+    left: 10%;
 
 }
 #gifLoader {
@@ -64,7 +64,7 @@ p {
 
 }
 #name {
-    background-color: black;
+    background-color: rgb(33, 33, 33);
     padding-left: 30px;
     border-radius: 4px 0px 0px 4px;
     width: 100%;
@@ -87,7 +87,7 @@ a {
 @media (min-width: 968px) {
 
     #navbar {
-        background-color: black;
+        background-color: rgb(33, 33, 33);
         color: white;
         margin-left: 22%;
         height: 100%;
@@ -102,7 +102,7 @@ a {
 @media (min-width: 768px) and (max-width: 968px) {
 
     #navbar {
-        background-color: rgb(181, 181, 181);
+        background-color: rgb(33, 33, 33);
         margin-left: 22%;
         height: 100%;
         width: 30%;
@@ -116,7 +116,7 @@ a {
 @media (max-width: 768px) and (min-width: 600px){
 
     #navbar {
-        background-color: rgb(181, 181, 181);
+        background-color: rgb(33, 33, 33);
         margin-left: 18%;
         height: 100%;
         width: 35%;
@@ -128,7 +128,7 @@ a {
 
 @media (max-width: 600px) and (min-width: 450px){
     #navbar {
-        background-color: rgb(181, 181, 181);
+        background-color: rgb(33, 33, 33);
         height: 100%;
         width: 50%;
         padding-top: 50%;
@@ -139,7 +139,7 @@ a {
 
 @media (max-width: 450px) {
     #navbar {
-        background-color: rgb(181, 181, 181);
+        background-color: rgb(33, 33, 33);
         height: 100%;
         width: 75%;
         padding-top: 50%;
