@@ -1,3 +1,5 @@
+html,body { height:100%; }
+
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
@@ -49,9 +51,11 @@ p {
     z-index: 1031;
 
 }
+
 #portfolioTextContainer {
     position: fixed;
     bottom: 10%;
+    width: 100%;
     left: 5%;
 }
 #gifLoader {
@@ -59,17 +63,27 @@ p {
 
 }
 #name {
-    background-color: #d6d7d8;
+    background-color: rgb(181, 181, 181);
     padding-left: 30px;
+
+    width: 100%;
 }
 
 #navbar {
-    background-color: #d6d7d8;
+    background-color: rgb(181, 181, 181);
+    margin-left: 22%;
+    height: 100%;
+    width: 15%;
+    padding-top: 20%;
 
 }
 
 @media (min-width: 768px) {
 
 
+
+}
+
+@@media (max-width: 768px) {
 
 }
