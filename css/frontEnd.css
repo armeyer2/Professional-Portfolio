@@ -21,7 +21,6 @@ label,
 h6 {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
-  margin: 0 0 35px;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
@@ -40,15 +39,16 @@ p {
 
 
 @media (min-width: 968px) {
-
     #merchText {
         margin-top: 75%;
+        float: left;
     }
 }
 
 @media (min-width: 768px) and (max-width: 968px) {
     #merchText {
         margin-top: 75%;
+        float: left;
     }
 }
 
@@ -64,9 +64,38 @@ p {
 .jumbotron {
     background-image: url("../img/winter forest cropped.jpg");
     background-size: cover;
-    height: 120%;
+    height: 175%;
 }
 
 #merch {
     margin-top: 10%;
+    margin-bottom: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#merchText {
+    text-align: center;
+
+}
+
+#navOverlay {
+    position: fixed;
+    margin: 10px;
+    z-index: 1031;
+}
+
+#navBar {
+    align-content: center;
+    width: 100%;
+
+
+}
+
+#jumboText {
+    position: relative;
+    text-align: center;
+    margin-top: 50%;
+    color: rgb(181, 181, 181);
+    font-family: 'Anton', sans-serif;
+
 }

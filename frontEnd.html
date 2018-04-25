@@ -6,9 +6,10 @@
     <title>Front-End</title>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
         <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,44 +17,47 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <link href="css/frontEnd.css" rel="stylesheet">
+    <link type="text/css" href="css/frontEnd.css" rel="stylesheet">
     <script src="js/frontEnd.js"></script>
 
 </head>
     <body>
-                <!-- Grey with black text -->
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </nav>
+        <div id="navOverlay">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">April</a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#merch">Merch</a></li>
+                  <li><a href="#contactContainer">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
 
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-
+              <h1 id="jumboText">Front-End</h1>
           </div>
         </div>
         <div class="container-fluid" id="merch">
-            <div class="col-xs-12 col-md-8">
+            <div class="col-xs-12 col-sm-8">
                 <img src="img/winter forest line up cartoons2.png" alt="Double Shirt">
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-4">
                 <h5 id="merchText">This months line-up is inspired by the lush forests of Yellowstone National Park.</h5>
             </div>
         </div>
+        <!-- Footer -->
+        <footer>
+            <div id="contactContainer" class="container text-center">
+                <p id="contact" class="copyright"> Contact Support: frontend@gmail.com</p>
+                <p class="copyright">Copyright &copy; Aaron Meyer</p>
+
+            </div>
+        </footer>
 
 
     </body>

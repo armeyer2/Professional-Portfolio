@@ -71,6 +71,14 @@ p {
 a {
     color: black;
 }
+#portfolioFadeText {
+
+    font-size: 14pt;
+    position: absolute;
+    color: grey;
+    
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 
 
@@ -84,15 +92,6 @@ a {
         padding-top: 20%;
 
     }
-    #portfolioFadeText {
-
-        font-size: 14pt;
-        position: absolute;
-        color: grey;
-        display: none;
-        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    #portfolioFadeTextMobile { display: none; }
 
 }
 
@@ -106,15 +105,6 @@ a {
         padding-top: 20%;
 
     }
-    #portfolioFadeText {
-
-        font-size: 14pt;
-        position: absolute;
-        color: grey;
-        display: none;
-        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    #portfolioFadeTextMobile { display: none; }
 
 }
 
@@ -129,14 +119,6 @@ a {
         padding-bottom: 20%;
 
     }
-    #portfolioFadeTextMobile {
-
-        font-size: 14pt;
-        position: absolute;
-        color: grey;
-        display: none;
-        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
 
 }
 
@@ -150,12 +132,5 @@ a {
         padding-bottom: 20%;
 
     }
-    #portfolioFadeTextMobile {
 
-        font-size: 14pt;
-        position: absolute;
-        color: grey;
-        display: none;
-        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
 }
