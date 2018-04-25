@@ -56,7 +56,7 @@ p {
     position: fixed;
     bottom: 10%;
     width: 100%;
-    left: 10%;
+    left: 6%;
 
 }
 #gifLoader {
@@ -65,7 +65,7 @@ p {
 }
 #name {
     background-color: rgb(33, 33, 33);
-    padding-left: 30px;
+    padding-left: 20px;
     border-radius: 4px 0px 0px 4px;
     width: 100%;
     color: white;
