@@ -91,6 +91,15 @@ p {
     display: inline-block;
 }
 
+#menuButton {
+    float: right;
+    display: inline-block;
+    padding: 26px;
+}
+#menu {
+    float: right;
+}
+
 #palmTree {
     width: 40px;
     display: inline-block;
@@ -104,6 +113,5 @@ p {
     color: rgb(181, 181, 181);
     font-family: 'Anton', sans-serif;
     font-size: 72pt;
-    background-color: rgba(255,255,255, 0.9);
 
 }
