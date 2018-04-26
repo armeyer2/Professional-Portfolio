@@ -20,6 +20,25 @@
            }
         })
 
+        $('#galleryLink').mouseover(function () {
+            if ($(window).width() < 600) {
+               $("#gallery").fadeIn(500);
+               $('#navbar').fadeOut(500);
+           } else {
+               $("#contact").fadeOut(500);
+               $("#gallery").fadeIn(500);
+           }
+        })
+        $('#galleryLink').click(function () {
+            if ($(window).width() < 600) {
+               $("#gallery").fadeIn(500);
+               $('#navbar').fadeOut(500);
+           } else {
+               $("#contact").fadeOut(500);
+               $("#gallery").fadeIn(500);
+           }
+        })
+
 
         $('#contactLink').mouseover(function () {
             if ($(window).width() < 600) {
