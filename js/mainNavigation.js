@@ -63,6 +63,7 @@
         $(".backButton").click(function () {
             $("#mobileAbout").fadeOut(500);
             $("#mobileContact").fadeOut(500);
+            $("#gallery").fadeOut(500);
             $("#navbar").fadeIn(500);
         })
     });

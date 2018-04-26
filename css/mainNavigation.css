@@ -72,6 +72,9 @@ p {
 
             border-radius: 4px 0px 0px 4px;
     }
+    #galleryBackButton {
+        display: none;
+    }
 
 }
 
@@ -107,6 +110,9 @@ p {
 
             border-radius: 4px 4px 4px 4px;
     }
+    #galleryBackButton {
+        display: none;
+    }
 
 }
 
@@ -140,6 +146,9 @@ p {
 
 
             border-radius: 4px 4px 4px 4px;
+    }
+    #galleryBackButton {
+        display: none;
     }
 
 }
